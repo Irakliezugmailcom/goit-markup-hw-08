@@ -1,0 +1,115 @@
+.header {
+    position: relative;
+    border-bottom: 1px solid #ECECEC;
+    &__container {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin-left: 93px;
+}
+
+.nav__logo__left {
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(31 / 26);
+    letter-spacing: 0.03em;
+    color: $accent-color;
+    text-decoration: none;
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+
+.nav__logo__right {
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(31 / 26);
+    letter-spacing: 0.03em;
+    color: var(--id-color);
+    text-decoration: none;
+    margin-left: -7px;
+}
+
+.nav__item + .nav__item {
+    margin-left: 50px;
+}
+
+.nav__link--current {
+    color: $accent-color;
+}
+
+.nav__link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.02em;
+    color: var(--id-color);
+    list-style-type: none; 
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 250ms $cubic;
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+    
+    &--current {
+        position: relative;
+    }
+    
+    &--current { 
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: -32px;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: $accent-color;
+            border-radius: 2px;
+        }
+    }
+
+.contacts__item + .contacts__item {
+    margin-left: 50px;
+}
+
+.header__link {
+    list-style-type: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.02em;
+    cursor: pointer;
+    color: $subid-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: color 250ms $cubic;
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+}
+
+.contacts__svg {
+    margin-right: 10px;
+    fill: $subid-color;
+
+    .header__link 
+    &:focus {
+        fill: $accent-color;
+    }
+}
+
+
+

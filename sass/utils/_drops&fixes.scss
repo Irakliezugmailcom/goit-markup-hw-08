@@ -1,0 +1,56 @@
+p, h1, h2, h3, h4 {
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    min-width: 100%;
+    display: block;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.section {
+    padding: 94px 0;
+}
+
+.container {
+    max-width: 1200px;
+    min-width: 320px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    outline: 2px solid tomato;
+}
+
+.section__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(42 / 36);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $id-color;
+    margin-bottom: 50px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
