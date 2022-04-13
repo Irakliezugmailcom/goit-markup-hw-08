@@ -30,6 +30,18 @@ a {
     padding-left: 15px;
     padding-right: 15px;
     outline: 2px solid tomato;
+
+    @media (min-width: 576px) {
+        width: 576px;
+    }
+
+    @media (min-width: 768px) {
+        width: 768px;
+    }
+
+    @media (min-width: 1140px) {
+        width: 1140px;
+    }
 }
 
 .section__title {
